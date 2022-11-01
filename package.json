@@ -1,0 +1,35 @@
+{
+  "name": "esbuild-plugin-stylelint",
+  "version": "0.0.1",
+  "description": "Lint your esbuild bundles with Stylelint.",
+  "main": "src/index.js",
+  "types": "types/index.js",
+  "scripts": {
+    "start": "node tests/build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ordros/esbuild-plugin-stylelint.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "keywords": [
+    "esbuild",
+    "plugin",
+    "esbuild-plugin",
+    "stylelint",
+    "lint"
+  ],
+  "bugs": {
+    "url": "https://github.com/ordros/esbuild-plugin-stylelint/issues"
+  },
+  "homepage": "https://github.com/ordros/esbuild-plugin-stylelint#readme",
+  "peerDependencies": {
+    "esbuild": "^0.15.12",
+    "stylelint": "^14.1.0",
+    "stylelint-formatter-pretty": "^3.1.0"
+  },
+  "devDependencies": {
+    "postcss-scss": "^4.0.5"
+  }
+}

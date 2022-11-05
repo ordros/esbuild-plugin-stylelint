@@ -1,6 +1,5 @@
 const stylelint = require('stylelint');
 const formatter = require('stylelint-formatter-pretty');
-const path = require('path');
 
 module.exports = ({
   filter = /\.(s?css|jsx?|tsx?|vue)$/,
@@ -17,9 +16,9 @@ module.exports = ({
 
     build.onEnd(async () => {
       const result = await stylelint.lint({
+        formatter,
         ...stylelintOptions,
         files: targetFiles,
-        formatter,
       });
       const { output } = result;
       if (output.length > 0) {
